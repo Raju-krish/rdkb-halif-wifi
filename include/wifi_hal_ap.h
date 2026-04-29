@@ -577,7 +577,9 @@ typedef enum {
     WIFI_REASON_4WAY_HANDSHAKE_TIMEOUT = 15,
     WIFI_REASON_AKMP_NOT_VALID = 20,
     WIFI_REASON_IEEE_802_1X_AUTH_FAILED = 23,
-    WIFI_REASON_INVALID_PMKID = 49
+    WIFI_REASON_CIPHER_SUITE_REJECTED = 24,
+    WIFI_REASON_INVALID_PMKID = 49,
+    WIFI_REASON_FC_WEP_BIT_MISSING = 200  /**< FC_WEP=0 detected in encrypted data frame */
 } wifi_reason_code_t;
 
 typedef enum {
